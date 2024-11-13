@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>API_KEY</key>
+	<string>AIzaSyAYpWKUSv6JAR6FeV7QdUQ3iU5tLBmFAkU</string>
+	<key>GCM_SENDER_ID</key>
+	<string>1040531108841</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.ontimeapp.onTimeApp</string>
+	<key>PROJECT_ID</key>
+	<string>on-time-ea93b</string>
+	<key>STORAGE_BUCKET</key>
+	<string>on-time-ea93b.firebasestorage.app</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:1040531108841:ios:aa49c9517161b06ae35178</string>
+</dict>
+</plist>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1040531108841",
+    "project_id": "on-time-ea93b",
+    "storage_bucket": "on-time-ea93b.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1040531108841:android:5b2fcee21efb611ae35178",
+        "android_client_info": {
+          "package_name": "com.on_time_app.on_time_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD7ReMFQiX1RxVs0mabhQ19Dp-TMbbYCPc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
