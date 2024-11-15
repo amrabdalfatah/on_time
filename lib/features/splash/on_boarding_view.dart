@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:on_time_app/core/utils/colors.dart';
 import 'package:on_time_app/core/utils/images.dart';
 import 'package:on_time_app/features/auth/login_view.dart';
+import 'package:on_time_app/features/home/home_view.dart';
 
 class OnBoardingView extends StatefulWidget {
   const OnBoardingView({super.key});
@@ -22,6 +24,7 @@ class _OnBoardingViewState extends State<OnBoardingView> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.black,
       body: Stack(
         alignment: Alignment.bottomCenter,
         children: [
@@ -47,6 +50,9 @@ class _OnBoardingViewState extends State<OnBoardingView> {
                     },
                     child: const Text(
                       'Skip >',
+                      style: TextStyle(
+                        color: AppColors.mainColor,
+                      ),
                     ),
                   ),
                 ),
@@ -57,7 +63,7 @@ class _OnBoardingViewState extends State<OnBoardingView> {
             width: double.infinity,
             padding: const EdgeInsets.symmetric(horizontal: 50, vertical: 20),
             decoration: const BoxDecoration(
-              color: Colors.black,
+              color: Colors.white,
               borderRadius: BorderRadius.only(
                 topLeft: Radius.circular(20),
                 topRight: Radius.circular(20),
@@ -72,7 +78,7 @@ class _OnBoardingViewState extends State<OnBoardingView> {
                           ? Icons.media_bluetooth_off
                           : Icons.menu,
                   size: 40,
-                  color: Colors.white,
+                  color: AppColors.mainColor,
                 ),
                 Text(
                   index == 0
@@ -81,7 +87,7 @@ class _OnBoardingViewState extends State<OnBoardingView> {
                           ? 'Easy Payment'
                           : 'Fast Delivery',
                   style: const TextStyle(
-                    color: Colors.white,
+                    color: AppColors.mainColor,
                     fontWeight: FontWeight.bold,
                     fontSize: 30,
                   ),
@@ -90,7 +96,7 @@ class _OnBoardingViewState extends State<OnBoardingView> {
                   'lorem text invisible for this website lorem text invisible for this website lorem text invisible for this website lorem text invisible for this website lorem text invisible for this website',
                   textAlign: TextAlign.center,
                   style: TextStyle(
-                    color: Colors.white,
+                    color: Colors.black,
                     fontSize: 12,
                   ),
                 ),
@@ -102,7 +108,9 @@ class _OnBoardingViewState extends State<OnBoardingView> {
                       width: 20,
                       margin: const EdgeInsets.only(right: 5, top: 10),
                       decoration: BoxDecoration(
-                        color: index == 0 ? Colors.white : Colors.grey,
+                        color: index == 0
+                            ? AppColors.mainColor
+                            : AppColors.mainColorAccent,
                         borderRadius: BorderRadius.circular(3),
                       ),
                     ),
@@ -111,7 +119,9 @@ class _OnBoardingViewState extends State<OnBoardingView> {
                       width: 20,
                       margin: const EdgeInsets.only(right: 5, top: 10),
                       decoration: BoxDecoration(
-                        color: index == 1 ? Colors.white : Colors.grey,
+                        color: index == 1
+                            ? AppColors.mainColor
+                            : AppColors.mainColorAccent,
                         borderRadius: BorderRadius.circular(3),
                       ),
                     ),
@@ -120,7 +130,9 @@ class _OnBoardingViewState extends State<OnBoardingView> {
                       width: 20,
                       margin: const EdgeInsets.only(right: 5, top: 10),
                       decoration: BoxDecoration(
-                        color: index == 2 ? Colors.white : Colors.grey,
+                        color: index == 2
+                            ? AppColors.mainColor
+                            : AppColors.mainColorAccent,
                         borderRadius: BorderRadius.circular(3),
                       ),
                     ),
@@ -133,7 +145,7 @@ class _OnBoardingViewState extends State<OnBoardingView> {
                         index++;
                       });
                     } else {
-                      Get.to(() => const LoginView());
+                      Get.offAll(() => const HomeView());
                     }
                   },
                   child: Container(
@@ -142,13 +154,14 @@ class _OnBoardingViewState extends State<OnBoardingView> {
                     margin: const EdgeInsets.symmetric(vertical: 20),
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(20),
-                      color: Colors.white,
+                      color: AppColors.mainColor,
                     ),
                     child: Center(
                       child: Text(
                         index == 2 ? 'Get Started' : 'Next',
                         style: const TextStyle(
-                          color: Colors.black,
+                          color: Colors.white,
+                          fontWeight: FontWeight.bold,
                         ),
                       ),
                     ),

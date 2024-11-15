@@ -29,9 +29,22 @@ class _SplashViewState extends State<SplashView> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: AppColors.blackColor,
-      body: Center(
+    return Container(
+      height: double.infinity,
+      width: double.infinity,
+      decoration: const BoxDecoration(
+        gradient: LinearGradient(
+          begin: Alignment.topRight,
+          end: Alignment.bottomLeft,
+          colors: [
+            Color.fromRGBO(41, 57, 84, 1),
+            Color.fromRGBO(36, 54, 81, 1),
+            Color.fromRGBO(12, 16, 27, 1),
+            Color.fromRGBO(6, 8, 13, 1),
+          ],
+        ),
+      ),
+      child: Center(
         child: Image.asset(
           Images.logo,
         ),
